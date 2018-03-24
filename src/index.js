@@ -8,6 +8,7 @@ import store, { history } from './store';
 
 import './index.css';
 import LandingPageView from './containers/LandingPageView';
+import Layout from './containers/Layout';
 
 
 import registerServiceWorker from './registerServiceWorker';
@@ -18,6 +19,7 @@ render(
       <Router history={history}>
         <div>
           <Route exact path="/" component={LandingPageView} />
+          <Route path="/app" component={Layout} />
         </div>
       </Router>
     </div>
