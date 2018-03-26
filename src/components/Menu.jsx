@@ -1,12 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
+import './Menu.css';
 
 const Menu = () => {
   return (
-    <div>
-      <a href="/app/view1">View 1</a>
-      <a href="/app/view2">View 2</a>
-      <a href="/app/view3">View 3</a>
-    </div>
+    <nav className="menu">
+      <div><Link to="/app/view1">View 1</Link></div>
+      <div><Link to="/app/view2">View 2</Link></div>
+      <div><Link to="/app/view3">View 3</Link></div>
+    </nav>
   )
 }
 

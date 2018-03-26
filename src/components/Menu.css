@@ -1,0 +1,6 @@
+.menu {
+  background-color: lightcyan;
+  width: 150px;
+  height: calc(100vh - 114px);
+  display: inline-block;
+}
